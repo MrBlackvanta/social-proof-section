@@ -1,6 +1,10 @@
-export default function PatternTop({ className }: { className?: string }) {
+export default function PatternTop() {
   return (
-    <svg viewBox="0 0 584 362" className={className} aria-hidden="true">
+    <svg
+      viewBox="0 0 584 362"
+      className="pointer-events-none absolute top-0 left-0 -z-10 w-93.5 shell:w-146"
+      aria-hidden="true"
+    >
       <defs>
         <linearGradient
           id="pattern-top"

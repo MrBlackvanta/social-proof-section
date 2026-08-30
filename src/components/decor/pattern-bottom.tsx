@@ -1,6 +1,10 @@
-export default function PatternBottom({ className }: { className?: string }) {
+export default function PatternBottom() {
   return (
-    <svg viewBox="0 0 1085 673" className={className} aria-hidden="true">
+    <svg
+      viewBox="0 0 1085 673"
+      className="pointer-events-none absolute bottom-0 -left-88.75 -z-10 w-271.25 shell:right-0 shell:left-auto"
+      aria-hidden="true"
+    >
       <defs>
         <linearGradient
           id="pattern-bottom"

@@ -6,6 +6,8 @@
 }
 
 @theme {
+  --breakpoint-shell: 72.375rem;
+
   --color-plum: #512051;
   --color-plum-soft: #f7f2f7;
   --color-quiet: #80697f;
@@ -38,5 +40,34 @@
 @layer base {
   body {
     @apply bg-white font-sans text-quiet;
+  }
+}
+
+@utility v-rise {
+  @media (prefers-reduced-motion: no-preference) {
+    animation-name: v-rise;
+    animation-duration: 700ms;
+    animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+    animation-fill-mode: both;
+  }
+}
+
+@utility v-rise-step-* {
+  animation-delay: calc(--value(integer) * 80ms);
+}
+
+@utility v-rise-on-scroll {
+  @media (prefers-reduced-motion: no-preference) {
+    @supports (animation-timeline: view()) {
+      animation-timeline: view();
+      animation-range: entry 0px entry 160px;
+      animation-timing-function: linear;
+    }
+  }
+}
+
+@keyframes v-rise {
+  from {
+    translate: 0 1rem;
   }
 }
