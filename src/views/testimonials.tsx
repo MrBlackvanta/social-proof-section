@@ -12,7 +12,7 @@ export default function Testimonials() {
       <ul className="grid gap-4 shell:grid-cols-3 shell:gap-x-7.5 shell:*:first:mb-8 shell:*:first:v-rise-step-5 shell:*:nth-2:my-4 shell:*:nth-2:v-rise-step-6 shell:*:nth-3:mt-8 shell:*:nth-3:v-rise-step-7">
         {testimonials.map(({ id, name, avatar, quote }) => (
           <li key={id} className="v-rise max-shell:v-rise-on-scroll">
-            <figure className="h-full rounded-lg bg-plum px-8 pt-10 pb-9 text-white">
+            <figure className="h-full rounded-lg bg-plum px-8 pt-10 pb-7.5 text-white shell:pb-9.5">
               <figcaption className="flex items-center gap-6">
                 <img
                   src={avatar.src}
@@ -26,7 +26,7 @@ export default function Testimonials() {
                   <p className="text-pink">Verified Buyer</p>
                 </div>
               </figcaption>
-              <blockquote className="mt-6 text-body font-medium shell:mt-8">
+              <blockquote className="mt-7 text-body font-medium">
                 <p>{quote}</p>
               </blockquote>
             </figure>

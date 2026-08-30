@@ -22,7 +22,7 @@ const shareImage = {
   url: "/opengraph-image.jpg",
   width: 1200,
   height: 630,
-  alt: "Five-star rating badges beside the heading 10,000+ of our users love our products.",
+  alt: "Five-star rating badges and three customer testimonials beside the heading 10,000+ users love our products.",
 };
 
 export const metadata: Metadata = {

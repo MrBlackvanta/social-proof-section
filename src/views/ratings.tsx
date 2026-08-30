@@ -3,7 +3,7 @@ import { ratings } from "@/data";
 
 export default function Ratings() {
   return (
-    <section aria-labelledby="ratings-heading" className="mt-10 shell:mt-0">
+    <section aria-labelledby="ratings-heading" className="mt-10 shell:mt-6.25">
       <h2 id="ratings-heading" className="sr-only">
         Independent review ratings
       </h2>
@@ -11,7 +11,7 @@ export default function Ratings() {
         {ratings.map(({ id, source, stars }) => (
           <li
             key={id}
-            className="flex flex-col items-center gap-4 rounded-lg bg-plum-soft px-8 py-4 text-center text-label font-bold text-plum v-rise shell:w-111.25 shell:flex-row shell:gap-8 shell:py-5"
+            className="flex flex-col items-center gap-4 rounded-lg bg-plum-soft px-8 py-3.75 text-center text-label font-bold text-plum v-rise shell:w-111.25 shell:flex-row shell:gap-8 shell:py-5"
           >
             <StarRating count={stars} />
             <p>
