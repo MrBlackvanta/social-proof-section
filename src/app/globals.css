@@ -5,8 +5,38 @@
   --font-sans: var(--font-league-spartan);
 }
 
+@theme {
+  --color-plum: #512051;
+  --color-plum-soft: #f7f2f7;
+  --color-quiet: #80697f;
+  --color-pink: #ef70a8;
+  --color-star: #ef9546;
+
+  --container-shell: 69.375rem;
+
+  --text-display: 2.5rem;
+  --text-display--line-height: 2rem;
+  --text-display--letter-spacing: -0.03571em;
+
+  --text-display-lg: 3.5rem;
+  --text-display-lg--line-height: 3rem;
+  --text-display-lg--letter-spacing: -0.03571em;
+
+  --text-lead: 1.1875rem;
+  --text-lead--line-height: 1.5625rem;
+  --text-lead--letter-spacing: -0.03333em;
+
+  --text-body: 1.0625rem;
+  --text-body--line-height: 1.375rem;
+  --text-body--letter-spacing: -0.01786em;
+
+  --text-label: 1.0625rem;
+  --text-label--line-height: 1rem;
+  --text-label--letter-spacing: 0em;
+}
+
 @layer base {
   body {
-    @apply font-sans;
+    @apply bg-white font-sans text-quiet;
   }
 }
