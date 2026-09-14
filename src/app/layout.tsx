@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { League_Spartan } from "next/font/google";
 
+import { SITE_URL } from "@/app/site";
 import "./globals.css";
 
 const leagueSpartan = League_Spartan({
@@ -9,9 +10,6 @@ const leagueSpartan = League_Spartan({
   subsets: ["latin"],
   display: "swap",
 });
-
-const SITE_URL =
-  "https://social-proof-section.abdelrhman-ahmed8881.workers.dev";
 
 const name = "Ovation";
 const title = `${name} | Rated 5 stars by 10,000+ customers`;
